@@ -16,9 +16,8 @@
  *
  * @link      http://www.oxid-esales.com
  * @package   MOD_COUNTRYSPECIFICVAT
- * @copyright (C) OXID eSales AG 2003-2010
- * @version Country Specific VAT module for OXID eShop EE, PE and CE since version 4.3.0_26948
- * @version   SVN: $Id: modvatselector 2010-08-10 14:10:10Z arvydas $
+ * @copyright (C) OXID eSales AG 2003-2018
+ * @version   Country Specific VAT module for OXID eShop EE, PE and CE since version 4.3.0_26948
  */
 
 /**
@@ -41,9 +40,9 @@ class modVatSelector extends modVatSelector_parent
          * - Vat config via config.inc.php
          *
              $this->aCountryVat = array( "8f241f11096877ac0.98748826" => 1, // Vereinigte Staaten von Amerika
-                                         "a7c40f632a0804ab5.18804076" => 2, // Vereinigtes Königreich
+                                         "a7c40f632a0804ab5.18804076" => 2, // Vereinigtes KÃ¶nigreich
                                          "a7c40f6321c6f6109.43859248" => 3, // Schweiz
-                                         "a7c40f6320aeb2ec2.72885259" => 4, // Österreich
+                                         "a7c40f6320aeb2ec2.72885259" => 4, // Ã–sterreich
                                          "a7c40f631fc920687.20179984" => 5, // Deutschland
                                        );
 

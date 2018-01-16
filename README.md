@@ -22,8 +22,4 @@ Open config.inc.php and define country VATs e.g.:
 
 The country ID's can be found in "admin > Master Settings > Countries" (mouse over country name in country list) or OXID field in "oxcountry" table.
 
-Go to "admin > Master Settings > Core Settings > System > Modules" and append modules with:
-
-       oxvatselector => modvatselector
-
-Login to shop with some user to see how country specific VAT is calculated.
+Activate the module and login to shop with some user to see how country specific VAT is calculated.
