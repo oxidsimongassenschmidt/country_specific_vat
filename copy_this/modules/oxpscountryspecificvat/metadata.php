@@ -41,6 +41,6 @@ $aModule = array(
     'url'               =>  'http://www.oxid-esales.com',
     'email'             =>  'info@oxid-esales.com',
     'extend'            => array(
-        'oxvatselector'              =>  'oxps/oxpscountryspecificvat/models/modvatselector'
+        'oxvatselector'              =>  'oxpscountryspecificvat/models/modvatselector'
     ),
 );
