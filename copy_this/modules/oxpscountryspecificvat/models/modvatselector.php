@@ -68,4 +68,29 @@ class modVatSelector extends modVatSelector_parent
 
         return $dVat;
     }
+     public function getArticleVat($oArticle)
+    {
+        startProfile("_assignPriceInternal");
+        // article has its own VAT ?
+        
+        if (($dArticleVat = $oArticle->getCustomVAT()) !== null) {
+            stopProfile("_assignPriceInternal");
+
+            return $dArticleVat;
+        }
+        if (($dArticleVat = $this->_getVatForArticleCategory($oArticle)) !== false) {
+            stopProfile("_assignPriceInternal");
+
+            return $dArticleVat;
+        }
+
+        $oUser = $oArticle->getArticleUser();
+        if ($oUser){
+            return $this->getUserVat($oUser);
+        }
+
+        stopProfile("_assignPriceInternal");
+
+        return $this->getConfig()->getConfigParam('dDefaultVAT');
+    }
 }
